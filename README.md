@@ -77,3 +77,8 @@ Anna is a web application for data processing and analysis with an emphasis on a
 #### Summary
 
 There are many more paths with other use cases, but the important use cases are: partial uses, automated uses, and manual uses. Our target users are members of organizations, who need tools to understand their role and place in Anna for their organization. It should also be easy for indivual users by drawing more options for I/O in between the design and product complete phases.
+
+## Technologies
+
+## Resources
+http://senecajs.org/getting-started/ -senaca, a template for a microservice project in node.js
