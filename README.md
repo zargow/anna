@@ -6,7 +6,7 @@ Anna is a web application for data processing and analysis with an emphasis on a
 
 ## Goals
 
-#### Network infrastructure
+#### Network Archetecture
 * Utilize Chef Habitat and Docker for deployment/versioning.
 * Add Authentication for session approval and application / resource / pool approval.
 * Add a system-level data science service (independent from Anna's).
@@ -15,7 +15,7 @@ Anna is a web application for data processing and analysis with an emphasis on a
 * Multiple server node support to allow communication on Anna between multiple servers.
 * Automated deployment system, that tests builds, reverts to working formats, maintains microservices as seperate builds, and keeps versioning microservices simple with docker containers. 
 
-#### Anna (app)
+#### The App (Anna)
 * Code a microservice style application using NodeJS, postgreSQL, Vue.js, and js on jupyter notebooks.
 * Create a data retrieval process that reads common file types with API alternatives.
 * Create a data conversion process that includes a template editor, to add files  
@@ -55,7 +55,7 @@ Anna is a web application for data processing and analysis with an emphasis on a
 
 #### Use case example 1: very automated using best tools
 1. ```Retrieval```: Data is uploaded.
-2. ```Conversion```: Conversion layout uses metadata to determine which converesion template to use.
+2. ```Conversion```: Conversion layout uses metadata to determine which conversion template to use.
 3. ```Build```: Conversion data is mapped to custom data build template based on file metadata or conversion template selected.
 4. ```Analysis```: Algos add calculations and generate reports based on only build and pre-defined methods.
 5. ```Feedback```: Reports are sent to client or customer.
