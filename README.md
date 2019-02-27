@@ -1,19 +1,18 @@
-# Anna
+# Project: Anna
 
 ## Basic Overview
 
 Anna is a web application for data processing and analysis with an emphasis on automation and control delegation. Users define methods of data retrieval, processing, audits and feedback.
 
+## Projected Work Load
 
-## Complexities
-* Incorporating new tools for data retrieval templates or batch templates.
+#### Start-Up
+* designing tools for data retrieval templates or batch templates.
 * defining reporting features.
 
-## Start-Up Load
-
-## Maintanance Load: 
-* handling too many file types, APIs for data retrieval.
-* Users want to use other files ( not JSON, .db, .csv, or .txt).   
+#### Maintanance
+* adding more file types and APIs for data retrieval (not JSON, .db, .csv, or .txt).
+* 
 
 ## Goals
 * Network infrastructure should use Chef Habitat and docker for deployment as well as a high authentication model that identifies sessions and applies this session to determine access to resource pools (for each app/service).
