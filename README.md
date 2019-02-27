@@ -29,7 +29,7 @@ Anna is a web application for data processing and analysis with an emphasis on a
 
 ## Workflow
 
-#### Begin
+#### Early Stages
 * designing tools for data retrieval templates or batch templates.
 * defining reporting features.
 * microservice definitions, event handling, authentication.
@@ -39,7 +39,7 @@ Anna is a web application for data processing and analysis with an emphasis on a
 * interactive settings and control panels.
 * data science tools, handling, pushing, etc.
 
-#### End
+#### Final Stages
 * adding more file types and APIs for data retrieval (not JSON, .db, .csv, or .txt).
 * adding more reports, graphs, feedback communication tools.
 * adding templating tools for data conversion, batches, views, and reports.
@@ -48,14 +48,16 @@ Anna is a web application for data processing and analysis with an emphasis on a
 
 ## Life Cycle of Data 
 
-#### Automated (mostly)
+#### Use Case 1: very automated
 1. Retrieval: Data is uploaded.
 2. Conversion: Conversion layout uses metadata to determine which converesion template to use.
-3. Build: Conversion data is mapped to custom build data structure with changin 
-4. Analysis:
-5. Feedback:
+3. Build: Conversion data is mapped to custom data build template based on file metadata or conversion template selected.
+4. Analysis: Algos add calculations and generate reports based on only build and pre-defined methods.
+5. Feedback: Reports are sent to client or customer.
 
-#### Manual (mostly)
+This could be entirely automated from file retrieval to feedback reports, but its more likely certain processes fail and require manual attention, or that roles are segregated and require completion to begin the next task.
+
+#### Use Case 2: very manual
 
 
 #### Data Retrieval
