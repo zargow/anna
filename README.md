@@ -15,7 +15,7 @@ Anna is a web application for data processing and analysis with an emphasis on a
 * Multiple server node support to allow communication on Anna between multiple servers.
 * Automated deployment system, that tests builds, reverts to working formats, maintains microservices as seperate builds, and keeps versioning microservices simple with docker containers. 
 
-#### Anna Application
+#### Anna (app)
 * Code a microservice style application using NodeJS, postgreSQL, Vue.js, and js on jupyter notebooks.
 * Create a data retrieval process that reads common file types with API alternatives.
 * Create a data conversion process that includes a template editor, to add files  
