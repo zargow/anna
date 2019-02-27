@@ -4,34 +4,59 @@
 
 Anna is a web application for data processing and analysis with an emphasis on automation and control delegation. Users define methods of data retrieval, processing, audits and feedback.
 
-## Projected Work Load
+## Goals
 
-#### Start-Up
+#### Network infrastructure
+* Utilize Chef Habitat and Docker for deployment/versioning.
+* Add Authentication for session approval and application / resource / pool approval.
+* Add a system-level data science service (independent from Anna's).
+* Use a configuration file to define privleges for users of our system (as opposed to application-specific).
+* Use a configuration file to determine routes, server administration settings, deployments styles. 
+* Multiple server node support to allow communication on Anna between multiple servers.
+* Automated deployment system, that tests builds, reverts to working formats, maintains microservices as seperate builds, and keeps versioning microservices simple with docker containers. 
+
+#### Anna Application
+* Code a microservice style application using NodeJS, postgreSQL, Vue.js, and js on jupyter notebooks.
+* Create a data retrieval process that reads common file types with API alternatives.
+* Create a data conversion process that includes a template editor, to add files  
+* Provide a data build process that uses build tables and views to create new build views.
+* Provide a data reports process that uses web components, grids, notebooks, and PDFs containers.
+  ``` Anna does not provide PDF edit support for reports ```
+* Provide administration controls to organizations for setting responsbilities and procedures.
+* Always consider the integrity, usability, performance, and cost of different kinds of data moves.
+* Development workflow should match "workflow: end" below and maitenance should be seperated by microservice.
+* Provide a science-based dashboard that can outline time-sensitive tasks, charts, other widgets.
+
+## Workflow
+
+#### Begin
 * designing tools for data retrieval templates or batch templates.
 * defining reporting features.
+* microservice definitions, event handling, authentication.
+* chef habitat, docker, and app communication services.
+* versioning, deployments, all code uses a model-first approach.
+* database communication via APIs.
+* interactive settings and control panels.
+* data science tools, handling, pushing, etc.
 
-#### Maintanance
+#### End
 * adding more file types and APIs for data retrieval (not JSON, .db, .csv, or .txt).
-* 
+* adding more reports, graphs, feedback communication tools.
+* adding templating tools for data conversion, batches, views, and reports.
+* adding internal and external algos, predictive models, notebooks, new ds scripts.
 
-## Goals
-* Network infrastructure should use Chef Habitat and docker for deployment as well as a high authentication model that identifies sessions and applies this session to determine access to resource pools (for each app/service).
-* Write Anna as a microservice infrastructure in nodejs, using postgreSQL, Vue.js, and python/js scripts. 
-* Provide a data retrieval process that can automate virtually any accepted file or database into a common data build.
-* Provide a data build process that can automate any common data build table into build views.
-* Provide a way to connect build views to UI and services.
-  1. Grids, or other user interface controls, defaulted by your organization, and customized by your users.
-  2. APIs, microservices, communication channels between customers.
-* Provide administration rules to control data builds and conversions, assign tasks and handle failures. Allow organization administrators to define these processes and who controls the ports
-* Provide a method of saving, storing, restoring, encrypting, and compressing data that is cost effective and provides extensive usability.
-* Development work should mostly consist of adding input file controls, reports, algorithms, and more involved in the business logic, rather than maintenance. We'd like to automate as much maintenance as possible on the overall system, while assigning developers to microservices to individually have authority over.
 
-## Life Cycle
-1. Data Retrieval-- A file is recieved by us through your company or customers.
-2. Data Conversion-- Use a Conversion Layout with your file to map file data to a table.
-3. Data Build-- Use one or many View Layouts to define view(s) for this new data.
-4. ...
-5. Profit!
+## Life Cycle of Data 
+
+#### Automated (mostly)
+1. Retrieval: Data is uploaded.
+2. Conversion: Conversion layout uses metadata to determine which converesion template to use.
+3. Build: Conversion data is mapped to custom build data structure with changin 
+4. Analysis:
+5. Feedback:
+
+#### Manual (mostly)
+
 
 #### Data Retrieval
 No formatted files neccessary! As long as your files contain common encoding patterns, Anna will provide useful templating tools to help automate your data retrieval tasks.
