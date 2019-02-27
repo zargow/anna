@@ -29,17 +29,22 @@ Anna is a web application for data processing and analysis with an emphasis on a
 
 ## Workflow
 
-#### Early Stages
+#### Early Stages (architecture phase)
 * designing tools for data retrieval templates or batch templates.
 * defining reporting features.
 * microservice definitions, event handling, authentication.
 * chef habitat, docker, and app communication services.
 * versioning, deployments, all code uses a model-first approach.
 * database communication via APIs.
-* interactive settings and control panels.
+* interactive and centralized settings and control panels.
 * data science tools, handling, pushing, etc.
+* adding test-level utilities.
 
-#### Final Stages
+#### Mid Stages (design phase)
+* adding service-level utilities
+
+
+#### Final Stages (product complete phase)
 * adding more file types and APIs for data retrieval (not JSON, .db, .csv, or .txt).
 * adding more reports, graphs, feedback communication tools.
 * adding templating tools for data conversion, batches, views, and reports.
@@ -53,12 +58,17 @@ Anna is a web application for data processing and analysis with an emphasis on a
 2. Conversion: Conversion layout uses metadata to determine which converesion template to use.
 3. Build: Conversion data is mapped to custom data build template based on file metadata or conversion template selected.
 4. Analysis: Algos add calculations and generate reports based on only build and pre-defined methods.
-5. Feedback: Reports are sent to client or customer.
+5. ```Feedback```: Reports are sent to client or customer.
 
 This could be entirely automated from file retrieval to feedback reports, but its more likely certain processes fail and require manual attention, or that roles are segregated and require completion to begin the next task.
 
 #### Use Case 2: very manual
+1. Retrieval: Data is uploaded.
+2. Conversion: Conversion layout uses metadata to determine which converesion template to use.
+3. Build: Conversion data is mapped to custom data build template based on file metadata or conversion template selected.
+4. Analysis: Algos add calculations and generate reports based on only build and pre-defined methods.
+5. Feedback: Reports are sent to client or customer.
 
+## Potential Clients
+1. ATG -- statements, duplicate payments, are examples of complex report modules.
 
-#### Data Retrieval
-No formatted files neccessary! As long as your files contain common encoding patterns, Anna will provide useful templating tools to help automate your data retrieval tasks.
